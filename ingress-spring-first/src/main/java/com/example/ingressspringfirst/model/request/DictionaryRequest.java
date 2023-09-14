@@ -1,4 +1,4 @@
-package com.example.ingressspringfirst.model;
+package com.example.ingressspringfirst.model.request;
 
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
@@ -11,10 +11,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DictionaryRequest {
-    private String username;
-    private Integer age;
-    @CreationTimestamp
-    private LocalDateTime createdAt;
-    @UpdateTimestamp
-    private LocalDateTime updatedAt;
+    private Long id;
+    private String category;
+    private String subCategory;
 }

@@ -1,7 +1,7 @@
 package com.example.ingressspringfirst.controller;
 
-import com.example.ingressspringfirst.model.DictionaryRequest;
-import com.example.ingressspringfirst.model.DictionaryResponse;
+import com.example.ingressspringfirst.model.request.DictionaryRequest;
+import com.example.ingressspringfirst.model.response.DictionaryResponse;
 import com.example.ingressspringfirst.service.DictionaryService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;

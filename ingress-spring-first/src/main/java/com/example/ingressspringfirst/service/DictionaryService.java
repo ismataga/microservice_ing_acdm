@@ -1,7 +1,7 @@
 package com.example.ingressspringfirst.service;
 
-import com.example.ingressspringfirst.model.DictionaryRequest;
-import com.example.ingressspringfirst.model.DictionaryResponse;
+import com.example.ingressspringfirst.model.request.DictionaryRequest;
+import com.example.ingressspringfirst.model.response.DictionaryResponse;
 import java.util.List;
 import org.springframework.stereotype.Service;
 

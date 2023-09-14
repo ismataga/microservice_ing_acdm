@@ -1,4 +1,4 @@
-package com.example.ingressspringfirst.model;
+package com.example.ingressspringfirst.model.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

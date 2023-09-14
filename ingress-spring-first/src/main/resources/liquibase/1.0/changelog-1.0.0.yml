@@ -1,0 +1,58 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create users table
+      author: Ismat Aghamirzayev
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: username
+                  type: varchar(256)
+                  remarks: username of user
+                  constraints:
+                    nullable: false
+              - column:
+                  name: age
+                  type: int
+                  remarks: age of user
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  defaultValue: now()
+                  remarks: when the record created
+                  constraints:
+                    nullable: true
+              - column:
+                  name: updated_at
+                  type: timestamp
+                  defaultValue: now()
+                  remarks: last updated record
+                  constraints:
+                    nullable: true
+              - column:
+                  name: birth_place
+                  type: varchar(256)
+                  remarks: birth_place of user
+                  constraints:
+                    nullable: true
+          remarks: Table to store information about users
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create shedlock table
+      author: Ismat Aghamirzayev
+      changes:
+        - createTable:
+            tableName: shedlock
+            columns:
+              - column:
+                  name: name
+                  type: varchar(64)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: shedlock_pk
+                    nullable: false
+              - column:
+                  name: lock_until
+                  type: timestamp
+                  constraints:
+                    nullable: true
+              - column:
+                  name: locked_at
+                  type: timestamp
+              - column:
+                  name: locked_by
+                  type: varchar(255)
+              - createIndex:
+                  indexName: inx_shedlock_name
+                  tableName: shedlock
+                  columns:
+                    - column:
+                        name: name
+          remarks: Table to store information about users
+
+
+
+
+
+
+
+
+
+
