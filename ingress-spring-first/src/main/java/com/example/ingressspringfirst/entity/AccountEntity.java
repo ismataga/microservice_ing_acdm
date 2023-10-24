@@ -1,10 +1,7 @@
 package com.example.ingressspringfirst.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 import lombok.AllArgsConstructor;
@@ -29,6 +26,8 @@ public class AccountEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private BigDecimal amount;
+
+    @Version
     private Long version;
 
     @Override

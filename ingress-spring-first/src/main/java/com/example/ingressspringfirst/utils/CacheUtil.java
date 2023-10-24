@@ -21,4 +21,5 @@ public class CacheUtil<T> {
         redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
         redisTemplate.opsForValue().set(key, data, expireTime, timeUnit);
     }
+
 }
